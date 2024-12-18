@@ -19,6 +19,10 @@ Um dieses Repository in MakeCode zu bearbeiten.
 * klicke auf **Importieren** und dann auf **Importiere URL**
 * füge **https://github.com/smartfeld/pxt-iot-cube** ein und klicke auf Importieren
 
+## Datenkonverter für ThingsBoard
+
+Zur Integration der Messdaten ist ThingsBoard vorgesehen. Den dafür nötigen Konverter ist im Ordner ../pxt-iot-cube/converters/things-board-data-converter.js abgelegt und kann bei Bedarf eingesetzt werden.
+
 ### Testen von Github Pages
 
 Github pages basiert auf jekyll und kann mithilfe der Anleitung in einer lokalen Testumgebung überprüft werden: https://jekyllrb.com/docs/

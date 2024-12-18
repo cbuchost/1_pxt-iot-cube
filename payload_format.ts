@@ -6,6 +6,7 @@
 * This file implements the CayenneLPP format for the data transmission.
 */
 
+//% groups="['Prepare to Send', 'Send', 'Receive', 'Device', 'Pins']"
 namespace IoTCube {
     /**
      * Buffer CayenneLPP
@@ -163,16 +164,12 @@ namespace IoTCube {
     //% channel.min=0, channel.max=255, channel.defl=1
     export function addTemperature(data: number, channel: number){
         if (checkBufferSpace(cCayenne.Temperature.size)) {
-            let temp = 0
-            if (data < 0) {
-                data = -data
-                temp = temp | 0x8000
-            }
-            temp = temp | (data * 10)
             Payload.add(channel)
             Payload.add(cCayenne.Temperature.code)
-            Payload.add(temp >> 8)
-            Payload.add(temp)
+            data = data *cCayenne.Temperature.factor
+            data = data & 0xffff
+            Payload.add(data >> 8)
+            Payload.add(data)
         }
     }
 
@@ -273,4 +270,6 @@ namespace IoTCube {
             Payload.add(alt);
         }
     }
+
+
 }
