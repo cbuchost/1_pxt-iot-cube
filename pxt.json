@@ -10,16 +10,17 @@
         "README.md",
         "enums.ts",
         "port_expander.ts",
-        "payload_format.ts",
+        "payload_format_cayenneLPP.ts",
         "enums_payload.ts",
         "_locales/de/IoT-Cube-jsdoc-strings.json",
-        "_locales/de/IoT-Cube-strings.json"
+        "_locales/de/IoT-Cube-strings.json",
+        "payload_format.ts"
     ],
     "testFiles": [
         "test.ts"
     ],
     "targetVersions": {
-        "target": "7.0.51",
+        "target": "7.0.57",
         "targetId": "microbit"
     },
     "supportedTargets": [
