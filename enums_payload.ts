@@ -48,3 +48,11 @@ const cCayenne = {
     Gyrometer: { code: 134, size: 8, factor: 100},
     GPS: {code: 136, size: 11, factor: 10000, factorAlt: 100}
 }
+
+enum payloadTypes {
+    Integer = 0x01,
+    Float = 0x02,
+    Boolean = 0x03,
+    String = 0x04,
+    Date = 0x05
+}
