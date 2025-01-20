@@ -10,7 +10,7 @@
         "README.md",
         "enums.ts",
         "port_expander.ts",
-        "payload_format.ts",
+        "payload_format_cayenneLPP.ts",
         "enums_payload.ts",
         "_locales/de/IoT-Cube-jsdoc-strings.json",
         "_locales/de/IoT-Cube-strings.json"
