@@ -34,15 +34,12 @@ namespace IoTCube {
     }
 
         /**
-     * Send your added Data over LoRa network.
+     * Clear your Payload
      * @param chaNum is the LoRa channel used during transmit
     */
-    //% blockId="LoRa_Clear_Payload"
-    //% block="Clear Payload
+    //% blockId="Clear_Payload"
+    //% block="Clear Payload"
     //% subcategory="PayloadFormatter" group="Send"
-    //% fport.min=1
-    //% fport.max=222
-    //% fport.defl=1
     export function ClearPayload() {
         payloadFormatter.payload = []
     }
@@ -53,7 +50,7 @@ namespace IoTCube {
     //% blockId="PayloadFormatter_NumberInput"
     //% block="Add Number Input %data on Channel %channel"
     //% subcategory="PayloadFormatter" 
-    //% group="Senden"
+    //% group="Hinzufügen"
     export function encodeSignedInteger(data: number) {
         if (data < -0x80000000 || data > 0x7fffffff) {
                 //throw new Error("Number out of range for signed 4 bytes");
