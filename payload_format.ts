@@ -47,7 +47,7 @@ namespace IoTCube {
      * Prepare Number to send
     */
     //% blockId="PayloadFormatter_NumberInput"
-    //% block="Add Number Input %data
+    //% block="Add Number Input %data"
     //% subcategory="PayloadFormatter" 
     //% group="Hinzufügen"
     export function encodeSignedInteger(data: number) {
@@ -73,7 +73,7 @@ namespace IoTCube {
     * Prepare Text to send
     */
     //% blockId="PayloadFormatter_TextInput"
-    //% block="Add Text Input %data
+    //% block="Add Text Input %data"
     //% subcategory="PayloadFormatter" 
     //% group="Hinzufügen"
     export function encodeString(data: string){
@@ -90,7 +90,7 @@ namespace IoTCube {
     * Prepare Boolean to send
     */
     //% blockId="PayloadFormatter_BooleanInput"
-    //% block="Add Boolean Input %data
+    //% block="Add Boolean Input %data"
     //% subcategory="PayloadFormatter" 
     //% group="Hinzufügen"
     export function encodeBoolean(data: boolean){
